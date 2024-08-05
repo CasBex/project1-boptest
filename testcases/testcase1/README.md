@@ -22,3 +22,12 @@ overwrite block parser (``<repo_root>/parser/parser.py``) to compile the FMU.
 3. ``$ python compile_fmu.py`` to compile the model FMU using the overwrite block parser.
 
 4. The resulting FMU will be named ``wrapped.fmu``.
+
+Generate a wrapper from Modelica code
+-------------------------------------
+
+```bash
+$ cd models
+$ omc gen_xlmdump.mos # requires OpenModelica
+$ python parse_wrapped.py -m SimpleRC -o mywrapped.mo SimpleRC.xml
+```

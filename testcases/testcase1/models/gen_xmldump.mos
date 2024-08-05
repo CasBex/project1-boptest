@@ -1,0 +1,4 @@
+loadFile("SimpleRC.mo");
+convertPackageToLibrary(SimpleRC, Modelica, "4.0.0");
+convertPackageToLibrary(SimpleRC, Buildings, "9.1.3");
+dumpXMLDAE(SimpleRC);
